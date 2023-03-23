@@ -1,0 +1,11 @@
+runtime: custom
+env: flex
+
+# [END gae_quickstart_yaml]
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 8
+  cool_down_period_sec: 180
+  cpu_utilization:
+    target_utilization: 0.5
+  target_concurrent_requests: 100
